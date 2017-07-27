@@ -1,3 +1,5 @@
+package Nextday_SE15.Nextday;
+
 public class Nextday {
 
 	public static Date nextDay(Date d) {

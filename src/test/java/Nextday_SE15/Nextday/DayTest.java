@@ -1,3 +1,5 @@
+package Nextday_SE15.Nextday;
+
 
 import static org.junit.Assert.*;
 

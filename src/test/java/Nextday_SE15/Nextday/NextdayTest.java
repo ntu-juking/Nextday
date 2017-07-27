@@ -1,3 +1,5 @@
+package Nextday_SE15.Nextday;
+
 import static org.junit.Assert.*;
 
 import java.lang.reflect.Array;
