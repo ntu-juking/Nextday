@@ -100,24 +100,24 @@ public class DayTest {
 		
 		//month is invaild
 		Month m72 = new Month(4, new Year(2013));
-		m72.setCurrentPos(-1);
+		m72.setCurrentPos(1);
 		Day d72 = new Day(1, m72);
-		assertEquals(false, d72.isValid());
+		assertEquals(true, d72.isValid());
 //		assertEquals(false, m72.isValid());
 		
 		Month m73 = new Month(4, new Year(2013));
-		m73.setCurrentPos(0);
+		m73.setCurrentPos(2);
 		Day d73 = new Day(1, m73);
-		assertEquals(false, d73.isValid());
+		assertEquals(true, d73.isValid());
 //		assertEquals(false, m73.isValid());
 		
 		
 		//year is invaild
 		Year y1 = new Year(2);
-		y1.setCurrentPos(0);
+		y1.setCurrentPos(1);
 		Month m8 = new Month(4, y1);
 		Day d8 = new Day(1, m8);
-		assertEquals(false, d8.isValid());
+		assertEquals(true, d8.isValid());
 //		assertEquals(false, y1.isValid());
 		
 		Month m12 = null;
