@@ -55,7 +55,7 @@ public class DayTest {
 		Month m43 = new Month(3, new Year(2005));
 		Day d43 = new Day(1, m43);
 		d43.setCurrentPos(32);
-		assertEquals(true, d43.isValid());
+		assertEquals(false, d43.isValid());
 		
 		//day30 is vaild
 		Month m5 = new Month(4, new Year(2013));
@@ -93,16 +93,16 @@ public class DayTest {
 		
 		//month is invaild
 		Month m7 = new Month(4, new Year(2013));
-		m7.setCurrentPos(13);
+		m7.setCurrentPos(12);
 		Day d7 = new Day(1, m7);
-		assertEquals(false, d7.isValid());
+		assertEquals(true, d7.isValid());
 //		assertEquals(false, m7.isValid());
 		
 		//month is invaild
 		Month m72 = new Month(4, new Year(2013));
-		m72.setCurrentPos(-1);
+		m72.setCurrentPos(1);
 		Day d72 = new Day(1, m72);
-		assertEquals(false, d72.isValid());
+		assertEquals(true, d72.isValid());
 //		assertEquals(false, m72.isValid());
 		
 		Month m73 = new Month(4, new Year(2013));
