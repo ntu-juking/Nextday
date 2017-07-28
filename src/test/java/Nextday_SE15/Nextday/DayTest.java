@@ -141,11 +141,11 @@ public class DayTest {
 		Day d = new Day(21, new Month(2, new Year(2013)));
 		d.setDay(31, new Month(1, new Year(2013)));
 		d.setDay(28, new Month(2, new Year(2003)));
-<<<<<<< HEAD
+
 		d.setDay(30, new Month(4, new Year(2003)));
-=======
+
 		d.setDay(27, new Month(4, new Year(2003)));
->>>>>>> 0907c2f87127fa9b0c84345ba15a6dcc9440fcd2
+
 	}
 
 	@Test
