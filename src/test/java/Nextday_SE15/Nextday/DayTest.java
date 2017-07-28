@@ -140,8 +140,8 @@ public class DayTest {
 		
 		Day d = new Day(21, new Month(2, new Year(2013)));
 		d.setDay(31, new Month(1, new Year(2013)));
-		d.setDay(29, new Month(2, new Year(2003)));
-		d.setDay(31, new Month(4, new Year(2003)));
+		d.setDay(28, new Month(2, new Year(2003)));
+		d.setDay(30, new Month(4, new Year(2003)));
 	}
 
 	@Test
